@@ -1,0 +1,89 @@
+<template name="appProfile">
+	
+	<div class="container">
+		<div class="alert alert-info">
+			<div class="input-group">
+
+					<div class="row">
+					StudentID:
+						<input type="text" class="form-control txtID" placeholder="Student ID">
+					Course:
+						<input type="text" class="form-control txtCourse" placeholder="Course">
+					</div>
+
+					<div class="row">
+					Full Name:
+						<input type="text" class="form-control txtFN" placeholder="Full Name">
+					Date of Birth
+						<input type="text" class="form-control txtDOB" placeholder="Date of Birth">
+					Civil Status
+						<input type="text" class="form-control txtCS" placeholder="Civil Status">
+					</div>
+
+					<div class="row">
+					Gender: 
+						<input type="text" class="form-control txtSex" placeholder="Gender">
+					Bloodtype:
+						<input type="text" class="form-control txtBT" placeholder="Blood Type">
+					</div>
+
+					<div class="row">
+					Height:
+						<input type="text" class="form-control txtHT" placeholder="Height">
+					Weight:
+						<input type="text" class="form-control txtWT" placeholder="Weight">
+					</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="container">
+		{{#each profile}}
+
+			<ul class="list-group">
+				<li class="list-group-item">
+					{{studentid}}
+				</li>
+
+				<li class="list-group-item">
+					{{course}} 
+				</li>
+
+				<li class="list-group-item">
+					{{firstname}}
+				</li>
+
+				<li class="list-group-item">
+					{{birthday}}
+				</li>
+
+				<li class="list-group-item">
+					{{civilstatus}}
+				</li>
+
+				<li class="list-group-item">
+					{{sex}}
+				</li>
+
+				<li class="list-group-item">
+					{{bloodtype}}
+				</li>
+
+				<li class="list-group-item">
+					{{height}}
+				</li>
+
+				<li class="list-group-item">
+					{{weight}}
+				</li>
+
+				</ul>
+				<button class="btn btn-danger btn-small btnDelete">&times;
+				</button>
+		{{/each}}
+	</div>
+	
+
+</template>
